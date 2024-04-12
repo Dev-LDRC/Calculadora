@@ -69,7 +69,7 @@ font-style: normal;
      
      display: grid;
      box-shadow: 0px 7px 10px 5px black;
-     background-color: hwb(237 5% 66%);
+     background-color: hwb(236 9% 74%);
      padding: 20px;
      gap: 10px;
      border-radius: 10px;
@@ -79,13 +79,14 @@ font-style: normal;
 .content_main h2 {
 
      color: white;
+     font-size: 30px;
 
 }
 
 .content_main input {
 
-     font-size: 20px;
-     padding: 4px;
+     font-size: 30px;
+     padding: 5px;
      outline: none;
      text-align: right;
 
@@ -97,12 +98,12 @@ font-style: normal;
      grid-template-columns: repeat(4, 1fr);
      gap: 5px;
 
-     font-size: 20px;
+     font-size: 30px;
      
 }
 .conteiner_buttons button {
 
-     padding: 5px;
+     padding: 8px;
      border: none;
 
 }
