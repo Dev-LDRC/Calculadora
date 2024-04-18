@@ -34,7 +34,7 @@ font-style: normal;
 .content_main {
      
      display: grid;
-     box-shadow: 0px 7px 10px 5px black;
+     box-shadow: 0px 0px 10px 5px white;
      background-color: hwb(236 9% 74%);
      padding: 20px;
      gap: 10px;
