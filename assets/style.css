@@ -7,49 +7,15 @@ margin: 0; /* Set the default margin to 0 */
 padding: 0; /* Set the default padding to 0 */
 }
 
-ul[role='list'], ol[role='list']{
-list-style: none; /* Turn off numbered and unordered list decoration */
-}
+/* ---------------------------------------- */
 
-html:focus-within{
-scroll-behavior: smooth; /* Make the scrolling inside of any scrollable element smooth */
-}
-
-a:not([class]){
-text-decoration-skip-ink: auto; /* Makes link undelines look better */
-}
-
-img, picture, svg, video, canvas{
-max-width: 100%; /* Makes it responsive */
-height: auto; /* Makes it responsive */
-vertical-align: middle; /* Makes text next to inline images look better */
-font-style: italic; /* If the images don't load it makes the alt decription look better */
-background-repeat: no-repeat; 
-/* The background repeat and size are there if you want to load a picture first like a backroung image that is worse quality while the better quality image loads */
-background-size: cover;
-}
-
-input, button, textarea, select{
-font: inherit; /* Makes these elements inherit fonts */
-}
-
-/* Turns off animation for people who don't want to see them */
-@media (prefers-reduced-motion: reduce){
-     html:focus-within {
-          scroll-behavior: auto;
-     }
-}
-
-body, html{
-height: 100%; /* Makes the body element full screen */
+body{
 background-color: #12131D;
 scroll-behavior: smooth; /* Makes normal scrolling smooth */
 font-family: "Roboto", sans-serif;
 font-weight: 500;
 font-style: normal;
 }
-
-/* ---------------------------------------- */
 
 .conteiner_main {
 
@@ -98,20 +64,50 @@ font-style: normal;
      grid-template-columns: repeat(4, 1fr);
      gap: 5px;
 
-     font-size: 30px;
      
 }
 .conteiner_buttons button {
-
+     
+     font-size: 30px;
      padding: 8px;
      border: none;
 
 }
-.conteiner_buttons button:hover {
 
-     cursor: pointer;
-     transition: 0.150s linear;
-     color: white;
-     background: #12131D;
+/* ---------------------------------------- */
 
+
+@media (min-width: 769px) {
+     .conteiner_buttons button:hover {
+     
+          cursor: pointer;
+          transition: 0.150s linear;
+          color: white;
+          background: #12131D;
+     
+     }
+}
+
+@media (max-width: 768px) {
+     .conteiner_buttons button {
+          font-size: 20px;
+     }
+     .conteiner_buttons button:active {
+          cursor: pointer;
+          color: white;
+          background: #12131D;
+     }
+     .content_main input {
+          font-size: 20px;
+     }
+
+}
+
+@media (max-width: 400px) {
+     .conteiner_buttons button {
+          font-size: 15px;
+     }
+     .content_main input {
+          font-size: 15px;
+     }
 }

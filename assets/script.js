@@ -10,7 +10,7 @@
 
      function check_character(valor) {
 
-          const required_values = '0123456789.+-*/'
+          const required_values = '0123456789.+-*/()'
 
           for(character of valor) {
                if ( required_values.includes(character) === false ) {
@@ -77,6 +77,5 @@
                result_calc()
           }
      })
-
 
 })()
